@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>TechnoVision</title>
+    <script src="script.js"></script> <!-- Link your JavaScript file -->
+    <link rel="stylesheet" media="screen and (max-width:1122px)" href="resume.css">
+    <style>
+        /*navbar*/
+        .navbar #img{
+            display: flex;
+            padding:10px;
+            margin:10px;
+            height:120px;
+            width:420px;
+            }
+        .navbar::before{
+                   content: "";
+                   position: absolute;
+                   background-color: black;
+                   z-index: -1;
+                   height: 64%;
+                   width: 100%;
+                   opacity: 0.4;
+                   top:0px;
+                   left:0px;
+        }
+        .navbar{
+            display: flex;
+            position:relative;
+            justify-content: space-between;
+        }
+        .navbar ul{
+                       display: flex;
+                       margin:0px;
+                       padding: 0px;
+                       float: right;
+                       
+        }
+        .navbar li{
+                    list-style: none;
+        }
+        .navbar li a:hover{
+                border-radius: 10px;
+                background-color: black;
+                color:white;
+        }
+        .navbar li a{
+            color:white;
+            font-weight: bold;
+            font-family: "Reddit Sans", sans-serif;
+           text-decoration: none;
+            padding:50px 18px;
+            margin:40px 10px;
+            display: block;
+        }
+
+                 /*home*/
+        #home::before{
+                content: "";
+                   position: absolute;
+                   background:url(home.jpg) center center/cover no-repeat;
+                   z-index: -1;
+                   left: 0px;
+                   height: 884px;
+                   width: 100%;
+                   opacity:0.89;
+        }
+        #home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:420px;
+            padding: 23px 26px;
+            top:0px;
+            left:0px;
+             animation: fadeIn 1s ease-in-out backwards;
+        }
+        @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+        #home h1{
+            margin-right:328px;
+            margin-top: 514px;
+            text-align: center;
+            color: white;
+            font-family: "Briem Hand", cursive;
+        }
+        #bio{
+        display: flex;
+        justify-content: center;
+        margin-top: 223px;
+    }
+
+       #bio img{
+        margin-top: 80px;
+        height:525px;
+        width:541px;
+       }
+       #bio .mybio{
+        font-family: "Nunito Sans", sans-serif;
+        margin:10px;
+        font-size: 18px;
+        padding:10px;
+        }
+       #bio .mybio img{
+        margin-top: 0px;
+        height:286px;
+        width:739px;
+       }
+       #bio .button{
+        margin: 18px 193px;
+        font-family: "Briem Hand", cursive;
+        align-items: center;
+        border-radius: 31px;
+        padding: 11px;
+        background-color: #27861f;
+        color: white;
+        cursor:pointer;
+        }
+        #bio .button a{
+            color:white;     
+            text-decoration: none;
+        }
+        #portfolio h1{
+            margin-top: 10px;
+            text-align: center;
+        }
+        .portfolio{
+            justify-content: center;
+            display: flex;
+        }
+        .portfolio img{
+            border:2px solid black;
+            height:289px;
+            width:300px;
+            margin:24px;
+            }
+     .portfolio a:hover{
+                 background-color: lightgrey;
+                 }
+                 .portfolio1{
+            justify-content: center;
+            display: flex;
+        }
+        .portfolio1 img{
+            border:2px solid black;
+            height:289px;
+            width:300px;
+            margin:24px;
+            }
+     .portfolio1 a:hover{
+                 background-color: lightgrey;
+                 }
+                 .portfolio2{
+                    display: flex;
+                    justify-content: center;
+                 }
+                 .portfolio2 img{
+            border:2px solid black;
+            height:289px;
+            width:300px;
+            margin:24px;
+            }
+            .portfolio2 a:hover{
+                 background-color: lightgrey;
+                 }
+            #blog{
+                font-family: "Briem Hand", cursive;
+                padding: 48px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+            #contact{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            #contact img{
+                height:400px;
+                width:484px;
+                margin:20px;
+            }
+            #contact .Contact{ 
+                display: flex;
+            }
+            #contact .Contact .contact1{
+                color:green;
+            }
+            #contact .Contact .contact1 a{
+                text-decoration: none;
+                color:green;
+            }
+            #contact .Contact .contact1 #h img{
+                height:24px;
+                width:24px;
+            }
+            #h{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: -9px;
+            }
+            #b{
+                margin-left: 170px;
+                margin-top: 5px;
+            }
+            #f img{
+                width:24px;
+                height:24px;
+                border-radius: 5px;
+            }
+            #f{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -15px;
+            }
+            #l{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -10px;
+                margin-left: 0px;
+            }
+            #l img{
+                border-radius: 5px;
+                width: 24px;
+                height: 24px;
+            }
+            #m{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 150px;
+            }
+            #m img{
+                width:24px;
+                height:24px;
+            }
+            #bg::before{
+                content: "";
+                   position: absolute;
+                   background:url(bg.png) center center/cover no-repeat;
+                   z-index: -1;
+                   height: 2990px;
+                   width: 100%;
+                   opacity:0.89;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="img"><img src="logo.png"></div>
+            
+    <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bio">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+            
+        </nav>
+    </header>
+    <section id="home">
+        <h1>I'm Harshit Mishra<br>A Web Development and Digital Marketing Enthusiast</h1>
+        </section>
+        <div id="bg">
+    <section id="bio">
+           <img src="bio.jpg">
+           <div class="mybio">
+            <h1>About me...</h1>
+            <p>I am a versatile electrical engineering graduate from a renowned state government college in Madhya Pradesh, India, driven by a passion for technology and creativity in digital landscape. With proficiency in Python, C++, HTML, CSS and hands-on experience from a 3-month internship in web development, I possess a strong foundation in both engineering and digital realms. Recently, I embarked on a journey into digital marketing, acquiring skills through basic SEO training and courses. I firmly believe that the fusion of web development and digital marketing forms a potent combination, allowing for innovative strategies and seamless user experiences. Eager to leverage my technical acumen and creative insights to excel in the ever-evolving landscape of digital marketing.</p>
+            <img src="my bio.png">
+            <button class="button"><a href="Harshit CV marketing.pdf" target="_blank">Download CV</a></button>
+            </div>
+        </div>
+           </section>
+           <section id="portfolio">
+             <h1>My Portfolio</h1>
+             <div class="portfolio">
+                <a href="digital.pdf" target="_blank"><img src="digital marketing.png"></a>
+                <a href="seo.pdf" target="_blank"><img src="seo.png"></a>
+                <a href="web.pdf" target="_blank"><img src="web.jpeg"></a>
+             </div> 
+             <div class="portfolio1">
+                <a href="python.pdf" target="_blank"><img src="python.png"></a>
+                <a href="java.pdf" target="_blank"><img src="java.png"></a>
+                <a href="robo.pdf" target="_blank"><img src="robo.jpeg"></a>
+             </div>
+             <div class="portfolio2">
+                <a href="yoga.pdf" target="_blank"><img src="yoga.png"></a>
+            </div>       
+           </section>
+           <section id="blog">
+           <h1>Blog</h1>
+           <p><b>Who am I ?</b><br><br>
+
+            I have almost completed my B.Tech in electrical engineering from Madhav Institute of Technology Gwalior, which is a government-aided autonomous institute. 
+            
+            In the pursuit of my interests towards automation, I equipped myself with a lot of coding skills. I undertook NPTEL training from IIT Kharagpur and Madras, and actively participated in Robotics competitions. I have also been curious to learn about online businesses and ecommerce platforms because of which I pursued training in web development. As a regular observer of how ecommerce platforms work, I couldn’t ignore the fact how digital marketing has started shaping its wings around our day to day lives. 
+            
+            I hence undertook some courses of SEO and Digital marketing basics,and now I believe that I have found the right career path.<br><br>
+            
+            <b>Why hire me ?</b><br><br> 
+            
+            Being a science student, and having faced many competitive exams in order to finally secure a seat in a state recognised engineering college, my aptitude skills have developed very well. Also my field of engineering involves analysing complex systems and finding solutions to intricate problems. Similarly, in digital marketing, I can apply my analytical skills to dissect data, understand user behaviour, and optimise marketing strategies effectively.
+            
+            My skills with coding and web development also give me an edge, as I can leverage testing of different marketing strategies with front-end coding to launch the right product fast and effectively.<br><br>
+            
+            <b>Other interests …</b><br><br>
+            
+            Other than work, you can find me playing cricket, badminton or just hanging out with friends. 
+            </p>    
+               </section>
+               <section id="contact">
+                <h1>Contact</h1>
+                <div class="Contact">
+                <img src="Contact.png">
+                    <div class ="contact1">
+                    <div id="m"><img src="mail.png"><a>mishraharshit81020@gmail.com</a></div>
+                    <div id="l">
+                        <img src="linkedin.png"><a href="https://www.linkedin.com/in/harshit-mishra-4074a6250/" target="_blank">Linkedin</a>
+                    </div>
+                    <div id="h"><img src="instagram.png"><a href="https://www.instagram.com/harshit_mishra_8102/" target="_blank">Instagram</a></div>    
+                    <div id="f"><img src="fb.png"><a href="https://www.facebook.com/profile.php?id=100007391494988" target="_blank">Facebook</a></div>
+                    <div id="b"><a>&#128222;&nbsp;&nbsp;&nbsp; +91-9981026251</a><br></div>
+                      </div>  
+                    </div>
+                       </section>
+                    </div>             
+</body>
+</html>

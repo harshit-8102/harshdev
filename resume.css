@@ -1,0 +1,539 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar #img {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    height: 120px;
+    width: 420px;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    height: 77%;
+    width: 100%;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar li a {
+    color: white;
+    font-weight: bold;
+    font-family: "Reddit Sans", sans-serif;
+    text-decoration: none;
+    padding: 15px 10px;
+    margin: 0 5px;
+    display: block;
+}
+
+.navbar li a:hover {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+/* Home */
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('resume/home.jpg') center center/cover no-repeat;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 810px;
+    width: 100%;
+    opacity: 0.89;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 420px;
+    padding: 23px 26px;
+    top: 0;
+    left: 0;
+    animation: fadeIn 1s ease-in-out backwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#home h1 {
+    text-align: center;
+    color: white;
+    font-family: "Briem Hand", cursive;
+}
+
+/* Bio */
+#bio {
+    display: flex;
+    justify-content: center;
+    margin-top: 163px;
+    flex-wrap: wrap;
+}
+
+#bio img {
+    height: auto;
+    width: 100%;
+    max-width: 508px;
+}
+
+#bio .mybio {
+    font-family: "Briem Hand", cursive;
+    margin: 10px;
+    padding: 10px;
+}
+
+#bio .mybio img {
+    height: auto;
+    width: 100%;
+    max-width: 739px;
+}
+
+#bio .button {
+    margin: 18px auto;
+    font-family: "Briem Hand", cursive;
+    align-items: center;
+    border-radius: 31px;
+    padding: 11px;
+    background-color: #27861f;
+    color: white;
+    cursor: pointer;
+}
+
+#bio .button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Portfolio */
+#portfolio h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.portfolio, .portfolio1, .portfolio2 {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio img, .portfolio1 img, .portfolio2 img {
+    border: 2px solid black;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 24px;
+}
+
+.portfolio a:hover, .portfolio1 a:hover, .portfolio2 a:hover {
+    background-color: lightgrey;
+}
+
+/* Blog */
+#blog {
+    font-family: "Briem Hand", cursive;
+    padding: 48px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+#contact .Contact {
+    display: flex;
+}
+
+#contact .Contact .contact1 {
+    color: green;
+}
+
+#contact .Contact .contact1 a {
+    text-decoration: none;
+    color: green;
+}
+
+#contact .Contact .contact1 #h img {
+    height: 24px;
+    width: 24px;
+}
+
+#h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#b {
+    margin-left: 26px;
+    margin-bottom: 5px;
+}
+
+#f img {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+}
+
+#f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+}
+
+#l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-left: 26px;
+}
+
+#l img {
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+}
+#bg::before{
+    content: "";
+       position: absolute;
+       background:url(bg.png) center center/cover no-repeat;
+       z-index: -1;
+       height: 4350px !important;
+       width: 100%;
+       opacity:0.89;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+.navbar #img {
+        margin-bottom: -70px;
+        height: 122px;
+        width: 301px;
+    }
+    .navbar ul {
+        align-items: center;
+    }
+    .navbar li a {
+        padding: 10px;
+        margin: 5px 0;
+    }
+    .navbar::before{
+        content: "";
+        position: absolute;
+        background-color: black;
+        z-index: -1;
+        height: 76% !important;
+        width: 155% !important;
+        opacity: 0.4;
+        top:0px;
+        left:0px;
+}
+    #home h1{
+        margin-right:-50px !important;
+        
+    }
+    #home::before{
+        content: "";
+           position: absolute;
+           background:url(home.jpg) center center/cover no-repeat;
+           z-index: -1;
+           left: 0px;
+           height: 884px;
+           width: 155% !important;
+           opacity:0.89;
+}
+#bg::before{
+    content: "";
+       position: absolute;
+       background:url(bg.png) center center/cover no-repeat;
+       z-index: -1;
+       height: 5120px !important;
+       width: 155% !important;
+       opacity:0.89;
+}
+    #bio {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    #bio img, #bio .mybio img {
+        max-width: 100%;
+    }
+    #bio .mybio{
+           margin-left:175px !important;
+        }
+        
+    .portfolio img, .portfolio1 img, .portfolio2 img {
+        max-width: 100%;
+        margin: 10px;
+    }
+    #portfolio h1{
+        margin-left: 263px !important;
+    }
+    .portfolio img{
+        margin-left:263px !important; 
+        }
+    #bio img{
+        margin-left:51px !important; 
+    }
+    .portfolio, .portfolio1, .portfolio2 {
+        padding: 0 10px;
+    }
+    #bio .mybio img{
+        margin-left: 12px !important;
+       }
+       .portfolio1 img{
+        margin-left:248px !important; 
+        }
+        .portfolio2 img{
+            margin-left:248px !important; 
+            }
+            #blog{
+                padding:0px !important;
+                margin-right:-220px !important;
+                margin-left: 41px !important;
+             }
+             #bg p{
+                margin-right:-131px !important;
+                margin-left:-150px !important;
+             } 
+            #bg h1{
+                margin-left: 120px !important;
+            }
+            .Contact img{
+                margin-left: 20px !important;
+            }         
+            #contact{
+                margin-left:262px !important;
+            }      
+            .contact1{ 
+                margin-right:10px !important;
+            } 
+}
+
+
+@media (max-width: 480px) {
+    .navbar #img {
+        height: 80px;
+        width: 280px;
+    }
+    .navbar ul {
+        align-items: center;
+    }
+    .navbar li a {
+        padding: 10px;
+        margin: 5px 0;
+    }
+    .navbar::before{
+        content: "";
+        position: absolute;
+        background-color: black;
+        z-index: -1;
+        height: 64%;
+        width: 200% !important;
+        opacity: 0.4;
+        top:0px;
+        left:0px;
+}
+    #home h1{
+        margin-right:-50px !important;
+        
+    }
+    #home::before{
+        content: "";
+           position: absolute;
+           background:url(home.jpg) center center/cover no-repeat;
+           z-index: -1;
+           left: 0px;
+           height: 884px;
+           width: 200% !important;
+           opacity:0.89;
+}
+#bg::before{
+    content: "";
+       position: absolute;
+       background:url(bg.png) center center/cover no-repeat;
+       z-index: -1;
+       height: 5040px !important;
+       width: 200% !important;
+       opacity:0.89;
+}
+    #bio {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #bio img, #bio .mybio img {
+        max-width: 100%;
+    }
+    #bio .mybio{
+           margin-left:175px !important;
+        }
+        #portfolio h1{
+            margin-left: 295px !important;
+            margin-right: -131px !important;
+        }
+    .portfolio img, .portfolio1 img, .portfolio2 img {
+        max-width: 100%;
+        margin: 10px;
+    }
+    .portfolio img{
+        margin-left:248px !important; 
+        }
+    #bio img{
+        margin-left:51px !important; 
+    }
+    .portfolio, .portfolio1, .portfolio2 {
+        padding: 0 10px;
+    }
+    #bio .mybio img{
+        margin-left: 12px !important;
+       }
+       .portfolio1 img{
+        margin-left:248px !important; 
+        }
+        .portfolio2 img{
+            margin-left:248px !important; 
+            }
+            #blog{
+                padding:0px !important;
+                margin-right:-411px !important;
+                margin-left: 41px !important;
+             }
+             #bg p{
+                margin-right:-131px !important;
+                margin-left:-150px !important;
+             } 
+             #bg h1{
+                margin-left: 120px !important;
+             }
+             #contact{
+                margin-left:378px !important;
+            }      
+            .contact1{ 
+                margin-right:10px !important;
+            }                
+}
+@media (max-width:395px) {
+         .navbar::before{
+            width: 231% !important;
+         }
+         #bg::before{
+            width:231% !important;
+         }
+         #home:before{
+            width:231% !important;
+         }
+         #blog{
+            padding:0px !important;
+            margin-right:-411px !important;
+            margin-left: 41px !important;
+         }
+         #bg p{
+            margin-right:-131px !important;
+            margin-left:-150px !important;
+         } 
+         #bg h1{
+            margin-left: 120px;
+         }               
+    }
+    @media (max-width:355px) {
+        .navbar::before{
+           width: 248% !important;
+        }
+        #bg::before{
+           width:248% !important;
+        }
+        #home:before{
+           width:248% !important;
+        }
+        #blog{
+           padding:0px !important;
+           margin-right:-411px !important;
+           margin-left: 41px !important;
+        }
+        #bg p{
+           margin-right:-131px !important;
+           margin-left:-150px !important;
+        } 
+        #bg h1{
+           margin-left: 120px;
+        }
+        .contact1{
+            margin-right: 10px !important;
+        }
+    }
+    @media (max-width:303px) {
+        .navbar::before{
+           width: 309% !important;
+        }
+        #bg::before{
+           width:309% !important;
+           height:5250px !important;
+        }
+        #home:before{
+           width:309% !important;
+        }
+        #blog{
+           padding:0px !important;
+           margin-right:-411px !important;
+           margin-left: 41px !important;
+        }
+        #bg p{
+           margin-right:-131px !important;
+           margin-left:-150px !important;
+        } 
+        #bg h1{
+           margin-left: 120px;
+        }
+        .contact1{
+            margin-right: 10px !important;
+        }
+    }
+
